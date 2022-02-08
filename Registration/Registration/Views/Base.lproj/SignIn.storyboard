@@ -21,17 +21,17 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BwK-af-pZg" userLabel="AppLable">
-                                <rect key="frame" x="25" y="300" width="364" height="128"/>
+                                <rect key="frame" x="25" y="300" width="364" height="108"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMz-Ah-3EC">
-                                        <rect key="frame" x="28" y="0.0" width="308.5" height="67"/>
+                                        <rect key="frame" x="28" y="0.0" width="308" height="47"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="55"/>
                                         <color key="textColor" systemColor="systemYellowColor"/>
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEW-BD-8nP">
-                                        <rect key="frame" x="132.5" y="67" width="99" height="61"/>
+                                        <rect key="frame" x="132.5" y="47" width="99" height="61"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="61" id="03x-07-Rwf"/>
                                         </constraints>
@@ -41,9 +41,12 @@
                                         <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="JMz-Ah-3EC" firstAttribute="leading" secondItem="BwK-af-pZg" secondAttribute="leading" constant="28" id="OZg-Oh-Y4k"/>
+                                </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="Kvx-30-GnT" userLabel="SingInUpStack">
-                                <rect key="frame" x="25" y="618" width="364" height="209"/>
+                                <rect key="frame" x="25" y="598" width="364" height="224"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0hg-gq-mQv" userLabel="Password">
                                         <rect key="frame" x="0.0" y="0.0" width="364" height="73"/>
@@ -76,8 +79,8 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fua-63-jhc" userLabel="SingInUpButtons">
-                                        <rect key="frame" x="0.0" y="94" width="364" height="115"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="fua-63-jhc" userLabel="SingInUpButtons">
+                                        <rect key="frame" x="0.0" y="94" width="364" height="130"/>
                                         <subviews>
                                             <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNs-b3-Lh9">
                                                 <rect key="frame" x="0.0" y="0.0" width="364" height="50"/>
@@ -96,7 +99,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFg-uQ-F0p">
-                                                <rect key="frame" x="0.0" y="65" width="364" height="50"/>
+                                                <rect key="frame" x="0.0" y="80" width="364" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="hKL-gX-c9K"/>
                                                 </constraints>
@@ -115,6 +118,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Kvx-30-GnT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="618" id="5O7-uy-BHE"/>
                             <constraint firstAttribute="bottom" secondItem="6p1-O6-z4u" secondAttribute="bottom" id="FmY-Eo-0fp"/>
                             <constraint firstItem="Kvx-30-GnT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="JRs-65-03E"/>
                             <constraint firstItem="BwK-af-pZg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="MS9-hB-mLi"/>
@@ -125,7 +129,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kvx-30-GnT" secondAttribute="trailing" constant="25" id="aD3-Cy-IFt"/>
                             <constraint firstItem="BwK-af-pZg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="160" id="f3u-92-Bb4"/>
                             <constraint firstItem="6p1-O6-z4u" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sBA-el-FrQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kvx-30-GnT" secondAttribute="bottom" constant="35" id="wFi-Jo-Mzn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kvx-30-GnT" secondAttribute="bottom" constant="40" id="xYL-5I-6LO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sign In" id="rS3-a3-GrP"/>
@@ -152,6 +156,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="QE8-bj-hgb">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemYellowColor"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" systemColor="systemYellowColor"/>
                         </textAttributes>
